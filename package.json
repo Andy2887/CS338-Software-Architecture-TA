@@ -1,0 +1,27 @@
+{
+  "name": "prototype",
+  "version": "1.0.0",
+  "description": "Architecture-focused Teaching Assistant web MVP",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "npm run build --silent && node dist/tests/promptPolicyChecks.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^17.4.0",
+    "express": "^5.2.1",
+    "openai": "^6.33.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.5.2",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  }
+}
